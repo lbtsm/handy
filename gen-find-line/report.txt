@@ -1,0 +1,28 @@
+Method
+    getTagSearchList
+Found usages  (8 usages found)
+    wechat-cx  (8 usages found)
+        app/Http/App/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                220 $outData = $this->categoryLogic->getTagSearchList($params);
+        app/Http/BaiDuCx/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                195 return $this->categoryLogic->getTagSearchList($params);
+        app/Http/DyCx/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                134 return $this->categoryLogic->getTagSearchList($params);
+        app/Http/TouTiaoCx/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                134 return $this->categoryLogic->getTagSearchList($params);
+        app/Http/TouTiaoReCx/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                134 return $this->categoryLogic->getTagSearchList($params);
+        app/Http/Wechat/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                190 return $this->categoryLogic->getTagSearchList($params);
+        app/Http/WechatCx/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                186 return $this->categoryLogic->getTagSearchList($params);
+        app/Http/WjbApp/V1_0/Controllers  (1 usage found)
+            CategoryController.php  (1 usage found)
+                213 $outData = $this->categoryLogic->getTagSearchList($params);

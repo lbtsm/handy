@@ -1,0 +1,279 @@
+Method
+    getSaleCompatible
+Found usages  (166 usages found)
+    wechat-cx  (166 usages found)
+        app/Console/Commands/Business  (1 usage found)
+            SaleCorpAddressCommand.php  (1 usage found)
+                137 $sale = SaleService::getInstance()->getSaleCompatible($orderInfo->saleId, [
+        app/Console/Commands/HomePage  (1 usage found)
+            HistoryDataCommand.php  (1 usage found)
+                87 $chaInfo = SaleService::getInstance()->getSaleCompatible($uri, $fields);
+        app/Console/Commands/Message  (2 usages found)
+            ReturnDeliveryMessageCommand.php  (1 usage found)
+                33 $sale = SaleService::getInstance()->getSaleCompatible($saleId, [
+            ReturnMessageCommand.php  (1 usage found)
+                39 $sale = SaleService::getInstance()->getSaleCompatible($saleId, [
+        app/Console/Commands/Notice  (5 usages found)
+            EmptyAddressNoticeCommand.php  (1 usage found)
+                57 $sale = SaleService::getInstance()->getSaleCompatible($orderInfo->saleId, SaleConst::ALL_COLUMNS);
+            PreSellTailRemindCommand.php  (1 usage found)
+                39 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['winUserinfoId', 'status']);
+            SaleTimeOutDeliveryTaskCommand.php  (1 usage found)
+                52 $sale = SaleService::getInstance()->getSaleCompatible(
+            SaleTimeoutReceiptTaskCommand.php  (1 usage found)
+                53 $sale = SaleService::getInstance()->getSaleCompatible(
+            SellerNoticeBindAddressCommand.php  (1 usage found)
+                34 $sale = SaleService::getInstance()->getSaleCompatible($id, SaleConst::ALL_COLUMNS);
+        app/Console/Commands/Order  (6 usages found)
+            ApplyOrderRestoreRemindCommand.php  (1 usage found)
+                45 $saleRow = SaleService::getInstance()->getSaleCompatible($saleId, $columns);
+            EmptyAddressRefundCommand.php  (1 usage found)
+                62 $sale = SaleService::getInstance()->getSaleCompatible($orderInfo->saleId, SaleConst::ALL_COLUMNS);
+            HandleBuyerAfterSaleEndCommand.php  (1 usage found)
+                112 $sale = SaleService::getInstance()->getSaleCompatible($saleId, SaleConst::ALL_COLUMNS);
+            HandleSellerAfterSaleEndCommand.php  (1 usage found)
+                113 $sale = SaleService::getInstance()->getSaleCompatible($saleId, SaleConst::ALL_COLUMNS);
+            RefundResidueCommand.php  (1 usage found)
+                39 $sale = SaleService::getInstance()->getSaleCompatible($saleId, $columns);
+            RejectOrderRestoreCommand.php  (1 usage found)
+                34 $saleRow = SaleService::getInstance()->getSaleCompatible($saleId, $columns);
+        app/Console/Commands/Sale  (5 usages found)
+            ReturnScoreCommand.php  (1 usage found)
+                27 $sale = SaleService::getInstance()->getSaleCompatible($uri, [
+            SaleDelayRefundCommand.php  (1 usage found)
+                84 $sale = SaleService::getInstance()->getSaleCompatible($saleId, $this->colums);
+            SaleHideTimeTaskCommand.php  (1 usage found)
+                46 $sale = SaleService::getInstance()->getSaleCompatible($saleItem['id'], ['id', 'winUserinfoId']);
+            SaleTimeOutPayTaskCommand.php  (1 usage found)
+                63 $sale = SaleService::getInstance()->getSaleCompatible(
+            SubscribeSaleStatusCommand.php  (1 usage found)
+                40 $sale = SaleService::getInstance()->getSaleCompatible($saleId, [
+        app/Console/Commands/SaleRelated  (2 usages found)
+            PayTimeEndCommand.php  (1 usage found)
+                210 $sale = SaleService::getInstance()->getSaleCompatible($saleId, SaleConst::ALL_COLUMNS, null, true);
+            SellerScoreLogCommand.php  (1 usage found)
+                60 $sale = SaleService::getInstance()->getSaleCompatible($uri, [
+        app/Console/Commands/TaskNotify  (1 usage found)
+            SaleDetailViewCommand.php  (1 usage found)
+                68 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+        app/Http/Inside/V1_0/Controllers  (10 usages found)
+            OrderController.php  (3 usages found)
+                197 $saleInfo = SaleService::getInstance()->getSaleCompatible($orderId, [
+                293 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, [
+                373 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, [
+            PpgController.php  (1 usage found)
+                194 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+            SaleController.php  (1 usage found)
+                43 $saleRow = SaleService::getInstance()->getSaleCompatible($saleId, $columns);
+            WptController.php  (5 usages found)
+                327 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['uri', 'winUserinfoId']);
+                519 $sale = SaleService::getInstance()->getSaleCompatible($uri, [
+                1404 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'profileJson']);
+                1444 $sale = SaleService::getInstance()->getSaleCompatible($uri, [
+                1603 $sale = SaleService::getInstance()->getSaleCompatible($saleId, [
+        app/Http/Inside/Wrap  (1 usage found)
+            UserWarp.php  (1 usage found)
+                59 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, ['winUserinfoId', 'id', 'status', 'winJson', 'type']);
+        app/Http/Pay/V1_0/Controllers  (3 usages found)
+            FaceTradeFeeController.php  (1 usage found)
+                75 $saleRow = SaleService::getInstance()->getSaleCompatible($orderFaceTradeFee->saleId, $columns);
+            PrepaymentController.php  (2 usages found)
+                70 $saleRow = SaleService::getInstance()->getSaleCompatible($order->targetId, $columns);
+                202 $saleRow = SaleService::getInstance()->getSaleCompatible($order->targetId, $columns);
+        app/Http/Wechat/V1_0/Controllers  (4 usages found)
+            AuctionController.php  (4 usages found)
+                341 $saleRow =  SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                410 $saleRow =  SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                652 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                677 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+        app/Logic  (83 usages found)
+            AgentLogic.php  (1 usage found)
+                884 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'status', 'profileJson']);
+            AssetsLogic.php  (3 usages found)
+                792 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                917 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                1353 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'paidTime', 'status', 'finishedTime', 'winUserinfoId']);
+            AuctionLogic.php  (23 usages found)
+                136 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                191 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, $whereSql);
+                543 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                598 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                720 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                891 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'uri', 'winJson']);
+                937 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'userinfoId', 'uri', 'winJson', 'profileJson']);
+                1103 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, $whereSql);
+                1371 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, $whereSql);
+                1467 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, $whereSql);
+                1555 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                1625 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                2009 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns);
+                2049 $sale = SaleService::getInstance()->getSaleCompatible($uri, [
+                2129 $saleRow = SaleService::getInstance()->getSaleCompatible(
+                2218 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, SaleConst::ALL_COLUMNS);
+                2355 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                2964 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                3051 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                3143 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                3527 $sale = SaleService::getInstance()->getSaleCompatible($uri, ['deliveryTime'], ['isDel' => 0]);
+                3558 $sale = SaleService::getInstance()->getSaleCompatible($uri, ['status', 'winUserinfoId'], ['isDel' => 0]);
+                3610 $sale = SaleService::getInstance()->getSaleCompatible($complaintLog->sale_id, ['profileJson', 'winUserinfoId'], ['isDel' => 0]);
+            BuyerAuctionLogic.php  (8 usages found)
+                90 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                179 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                345 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                633 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, [], true);
+                722 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                798 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                882 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, SaleConst::ALL_COLUMNS);
+                1040 $sale = SaleService::getInstance()->getSaleCompatible($uri, [
+            CashBackLogic.php  (2 usages found)
+                112 $sale = SaleService::getInstance()->getSaleCompatible($saleId, $columns, [], true);
+                159 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'userinfoId', 'profileJson', 'status']);
+            ComplainLogic.php  (1 usage found)
+                1445 return SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+            DepotOrderLogic.php  (6 usages found)
+                350 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'uri', 'winJson']);
+                450 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                685 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, $fields);
+                760 $saleInfos = SaleService::getInstance()->getSaleCompatible($saleUri, $fields);
+                935 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                1019 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+            DepotRepairPriceLogic.php  (1 usage found)
+                80 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+            DisputeLogic.php  (1 usage found)
+                50 $saleInfo = SaleService::getInstance()->getSaleCompatible($uri, [
+            ExpressLogic.php  (3 usages found)
+                76 $sale = SaleService::getInstance()->getSaleCompatible($uri, $columns, ['isDel' => 0]);
+                504 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, [], true);
+                598 $sale = SaleService::getInstance()->getSaleCompatible($uri, $columns, ['isDel' => 0]);
+            LiveLogic.php  (2 usages found)
+                2510 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, $columns, null, true);
+                2550 $multiWinsInfo = SaleService::getInstance()->getSaleCompatible(get_property($saleInfo, 'pid', ''), $columns, $where);
+            LiveSaleLogic.php  (1 usage found)
+                453 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'status', 'paidTime', 'winJson', 'type']);
+            OrderLogic.php  (2 usages found)
+                802 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, [], true);
+                1503 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, [], true);
+            PayLogic.php  (1 usage found)
+                845 $sale = SaleService::getInstance()->getSaleCompatible(
+            PromotionLogic.php  (1 usage found)
+                427 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['uri', 'winUserinfoId', 'isDel']);
+            QrLogic.php  (2 usages found)
+                198 $sale = SaleService::getInstance()->getSaleCompatible(
+                288 $sale = SaleService::getInstance()->getSaleCompatible(
+            QrShareLogic.php  (2 usages found)
+                21 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, null, ['isDel' => 0, 'status' => 'finished']);
+                45 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, $fields, ['isDel' => 0]);
+            SaleLogic.php  (6 usages found)
+                143 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, null, true);
+                210 $saleRow = SaleService::getInstance()->getSaleCompatible($saleRow->pid, $columns, null, true);
+                2069 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                2346 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, [], true);
+                2855 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, null, true);
+                2925 $sale = SaleService::getInstance()->getSaleCompatible(
+            SaleManageLogic.php  (2 usages found)
+                1244 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+                1994 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+            SaleMiniLogic.php  (4 usages found)
+                150 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, null, true);
+                179 $saleRow = SaleService::getInstance()->getSaleCompatible($saleRow->pid, $columns, null, true);
+                449 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, null, true);
+                491 $saleRow = SaleService::getInstance()->getSaleCompatible($saleRow->pid, $columns, null, true);
+            SealLogic.php  (3 usages found)
+                77 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, null, true);
+                85 $saleRow = SaleService::getInstance()->getSaleCompatible($saleRow->pid, $columns, null, true);
+                494 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns);
+            SellerIntegralTaskLogic.php  (1 usage found)
+                106 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+            SellerOrderLogic.php  (3 usages found)
+                1052 $saleInfo = SaleService::getInstance()->getSaleCompatible($uri, ["id","userinfoId", "winUserinfoId", "uri", "winJson"]);
+                1103 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'status', 'userinfoId', 'isDel']);
+                1271 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'userinfoId', 'status', 'winJson']);
+            StandardGoodsLogic.php  (2 usages found)
+                333 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, ['paidTime', 'uri']);
+                408 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, ['paidTime', 'uri']);
+            TwoYuanLogic.php  (2 usages found)
+                439 $sale = SaleService::getInstance()->getSaleCompatible($saleId, $colums, ['isDel' => 0]);
+                509 $sale = SaleService::getInstance()->getSaleCompatible($saleId, $colums, ['isDel' => 0]);
+        app/Logic/DayRaise  (2 usages found)
+            DayRaiseLogic.php  (2 usages found)
+                2262 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                2439 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, ['paidTime', 'status', 'winJson', 'uri', 'profileJson']);
+        app/Logic/Dispute  (6 usages found)
+            AdduceLogic.php  (4 usages found)
+                51 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                147 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                290 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                469 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+            ComplaintValidate.php  (1 usage found)
+                63 $this->saleInfo = SaleService::getInstance()->getSaleCompatible(
+            DisputeLogic.php  (1 usage found)
+                39 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, [
+        app/Logic/Ident  (6 usages found)
+            IdentLogic.php  (3 usages found)
+                841 $saleData = SaleService::getInstance()->getSaleCompatible($targetUris, ['id']);
+                1250 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                6222 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, [
+            IdentStandServiceLogic.php  (3 usages found)
+                78 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                230 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                410 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, ['uri', 'winJson']);
+        app/Logic/Live  (1 usage found)
+            LiveWelfareLogic.php  (1 usage found)
+                668 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, $fields);
+        app/Logic/LiveGroupBuy  (3 usages found)
+            GroupBuyLogic.php  (1 usage found)
+                1264 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, $columns);
+            GroupManageLogic.php  (2 usages found)
+                3545 $saleInfo = SaleService::getInstance()->getSaleCompatible(get_property($orderInfo, 'saleId'), $columns);
+                3625 $saleInfo = SaleService::getInstance()->getSaleCompatible(get_property($orderInfo, 'saleId'), $columns);
+        app/Logic/LiveService/Admin  (1 usage found)
+            GroupManage.php  (1 usage found)
+                611 $saleInfo = SaleService::getInstance()->getSaleCompatible($orderInfo->saleId, $fields);
+        app/Logic/PromoterUrl  (2 usages found)
+            PromoteUrlLogic.php  (2 usages found)
+                204 $saleRow = SaleService::getInstance()->getSaleCompatible($saleUri, $columns, null, true);
+                259 $saleRow = SaleService::getInstance()->getSaleCompatible($saleRow->pid, $columns, null, true);
+        app/Logic/SellerLive  (5 usages found)
+            LiveSaleLogic.php  (3 usages found)
+                2054 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, $field, $filter);
+                2112 $sale = SaleService::getInstance()->getSaleCompatible($goodsUri, $field, $filter);
+                2709 $sale = SaleService::getInstance()->getSaleCompatible($goodsUri);
+            SaleChangeEventLogic.php  (2 usages found)
+                60 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleUri, ['id', 'winUserinfoId']);
+                89 $saleInfo = SaleService::getInstance()->getSaleCompatible($saleId, ['id', 'uri', 'winUserinfoId', 'goodsId', 'type']);
+        app/Logic/SellerScore  (2 usages found)
+            SellerScoreLogic.php  (2 usages found)
+                130 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+                248 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+        app/Services/Depot  (1 usage found)
+            DepotService.php  (1 usage found)
+                339 $sale          = SaleService::getInstance()->getSaleCompatible($saleId, $columns, [], true);
+        app/Services/Ident  (1 usage found)
+            IdentService.php  (1 usage found)
+                158 $sale = SaleService::getInstance()->getSaleCompatible($saleUri, [
+        app/Services/Order  (4 usages found)
+            NewUserService.php  (1 usage found)
+                867 $saleRow = SaleService::getInstance()->getSaleCompatible($value->saleId, $columns, [], true);
+            RefundService.php  (1 usage found)
+                136 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns);
+            ReturnService.php  (2 usages found)
+                420 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, $columns, ['isDel' => 0]);
+                704 $saleRow = SaleService::getInstance()->getSaleCompatible($uri, [
+        app/Services/ReportVote  (1 usage found)
+            ReportVoteService.php  (1 usage found)
+                383 $sale = SaleService::getInstance()->getSaleCompatible($uri, ['id', 'uri', 'winJson', 'priceJson', 'profileJson']);
+        app/Services/Sale  (4 usages found)
+            SaleAfterServiceService.php  (4 usages found)
+                256 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['id', 'uri', 'userinfoId', 'profileJson', 'winJson']);
+                308 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['id', 'uri', 'userinfoId', 'profileJson', 'winJson']);
+                456 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['id', 'uri', 'userinfoId', 'profileJson', 'winJson']);
+                534 $sale = SaleService::getInstance()->getSaleCompatible($saleId, ['id', 'uri', 'userinfoId', 'profileJson', 'winJson']);
+        app/Task/Task  (1 usage found)
+            shopGmvStatisticsTask.php  (1 usage found)
+                33 $saleInfo = SaleService::getInstance()->getSaleCompatible(
+        app/WptConsole/WptCommands/SaleTimeEnd  (2 usages found)
+            SaleTimeEndTask.php  (1 usage found)
+                68 $sale = SaleService::getInstance()->getSaleCompatible($id, $this->colums);
+            SealTimeEndCommand.php  (1 usage found)
+                74 $sale = SaleService::getInstance()->getSaleCompatible($saleId, SaleConst::ALL_COLUMNS, null, true);
